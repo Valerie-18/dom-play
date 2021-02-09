@@ -1,1 +1,43 @@
-<h1>Here is where the dom play website will go </h1>
+<html>
+    <head>
+        <title>DOM Play</title>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </head>
+    <body>
+        <h1>DOM Play</h1>
+        <div id="clickSpans">
+        <p><span data-actor="hamlet">Hamlet: To be or not to be, that is the question </span></p>
+        <p><span data-actor="skull">Skull: Don't ask me, I'm only a skull!</span></p>
+        <p><span data-actor="hamlet">Hamlet: What did you say?</span></p>
+        <p><span data-actor="skull">Skull: Nothing. I'm only a figment of your imagination!</span></p>
+        <p><span data-actor="hamlet">Hamlet: Oh good. I thought I was going crazy!</span></p>
+        </div>
+         <script>
+     
+        var spans = document.querySelectorAll("#clickSpans span");
+    
+        for(const mySpan of spans){
+            mySpan.addEventListener("click",function(event){
+            highlightRole(mySpan.dataset.actor);
+            });
+        } function highlightRole(myActor){
+            for(const mySpan of spans){
+                if(mySpan.dataset.actor==myActor){
+                    mySpan.style.backgroundColor="yellow";
+                } else{mySpan.style.backgroundColor="white";}
+            }
+        }
+    
+    </script>
+    </body>
+    </html> 
