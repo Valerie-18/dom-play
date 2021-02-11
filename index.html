@@ -1,43 +1,43 @@
 <html>
     <head>
-        <title>DOM Play</title>
+        
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+            <link rel="stylesheet" href="css/dom.css" />
+            <link rel="stylesheet" href="css/nav.css" />
+            <title>Dom Play</title>
     
     </head>
     <body>
         <h1>DOM Play</h1>
+
+        <header>
+            <nav class="topnav" id="clickSpans">
+                 <p><span data-actor="mama">Mama</span></p>
+                 <p><span data-actor="charlotte">Charlotte</span></p>
+                 <p><span data-actor="tiana">Tiana</span></p>
+            </nav>
+     </header>
+     <main class = "wrapper">
+
         <div id="clickSpans">
-        <p><span data-actor="hamlet">Hamlet: To be or not to be, that is the question </span></p>
-        <p><span data-actor="skull">Skull: Don't ask me, I'm only a skull!</span></p>
-        <p><span data-actor="hamlet">Hamlet: What did you say?</span></p>
-        <p><span data-actor="skull">Skull: Nothing. I'm only a figment of your imagination!</span></p>
-        <p><span data-actor="hamlet">Hamlet: Oh good. I thought I was going crazy!</span></p>
-        </div>
-         <script>
-     
-        var spans = document.querySelectorAll("#clickSpans span");
-    
-        for(const mySpan of spans){
-            mySpan.addEventListener("click",function(event){
-            highlightRole(mySpan.dataset.actor);
-            });
-        } function highlightRole(myActor){
-            for(const mySpan of spans){
-                if(mySpan.dataset.actor==myActor){
-                    mySpan.style.backgroundColor="yellow";
-                } else{mySpan.style.backgroundColor="white";}
-            }
-        }
-    
-    </script>
+        <p><span data-actor="mama">Mama: Ugly little frog looked up with his sad brown eyes and pleaded, Oh please dear princess only a kiss from you can release this spell" and the beautiful princess was so moved by his desperate plea that she looked down at the slippery creature and kissed him </span></p>
+        <p><span data-actor="charlotte">Charlotte: Awwww</span></p>
+        <p><span data-actor="tiana">Tiana: Ewww</span></p>
+        <p><span data-actor="mama">Mama: Then the frog was transformed into a handsome prince, they were maarried and lived happily ever after, the end!</span></p>
+        <p><span data-actor="charlotte">Charlotte: Yaaay, read it again, read it again!</span></p>
+        <p><span data-actor="mama">Mama: Sorry Charlotte, it's time for us to be headed home, say goodnight Tiana </span></p>
+        <p><span data-actor="tiana">Tiana: There is no way in this whole wild world, I would ever ever ever, I mean never kiss a frog, Yuck!</span></p>
+        <p><span data-actor="charlotte">Charlotte: Is that so? *giggles*, Come on kiss him</span></p>
+        <p><span data-actor="tiana">Tiana:NO!</span></p>
+        <p><span data-actor="charlotte">Charlotte: Kiss him, kiss him, kiss him</span></p>
+        <p><span data-actor="tiana">Tiana: I won't I won't</span></p>
+        <p><span data-actor="charlotte">Charlotte: "I would do it, I would kiss 100 frogs if it means I could marry a prince an be a princess"</span></p>
+        <p><span data-actor="girls">Girls: Laughter </span></p>
+        <p><span data-actor="mama">Mama: You girls, stop tormenting that poor little kitty.</span></p>
+        <p><span data-actor="girls">Girls: *Laughter*</span></p>
+        <p><span data-actor="mama">Mama: poor thing</span></p>
+        
+    </div>
+         <script src="js/dom.js"></script>
     </body>
     </html> 
